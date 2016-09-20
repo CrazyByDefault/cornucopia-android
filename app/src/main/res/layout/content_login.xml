@@ -30,8 +30,9 @@
     <com.example.shashank.myapplication.MaterialTextField
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="2dp"
         app:mtf_image="@mipmap/email_icon"
-        app:mtf_openKeyboardOnFocus="true"
+
         app:mtf_labelColor="#cccccc"
 
         >
@@ -49,7 +50,8 @@
     <com.example.shashank.myapplication.MaterialTextField
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:mtf_openKeyboardOnFocus="true"
+        android:padding="2dp"
+
         app:mtf_image="@mipmap/key"
         app:mtf_labelColor="#cccccc">
 
@@ -68,6 +70,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:id="@+id/loginButton"
+        android:layout_marginTop="7dp"
         android:text="Login"
 
 

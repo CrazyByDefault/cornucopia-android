@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="top"
+    android:id="@+id/linLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:src="@drawable/ath"
+        android:id="@+id/imageView_chart"
+        android:layout_height="fill_parent"
+        android:scaleType="matrix"
+        android:layout_width="fill_parent" />
+
+</LinearLayout>

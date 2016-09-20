@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Cornucopia</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Page: %1$d</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

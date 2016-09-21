@@ -17,8 +17,8 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        final Intent mainIntent = new Intent(this, MainActivity.class);
-        final Intent mapIntent = new Intent(this, MapsActivity.class);
+        final Intent mainIntent = new Intent(this, MapsActivity.class);
+        final Intent registerIntent = new Intent(this, RegisterActivity.class);
 
         Button loginButton = (Button) findViewById(R.id.loginButton);
         Button mapButton = (Button) findViewById(R.id.mapButton);
@@ -35,7 +35,7 @@ public class LoginActivity extends AppCompatActivity {
         mapButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                startActivity(mapIntent);
+                startActivity(registerIntent);
             }
         });
     }

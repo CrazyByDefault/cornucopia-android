@@ -84,7 +84,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:id="@+id/mapButton"
-        android:text="Map"
+        android:text="Register"
 
 
 

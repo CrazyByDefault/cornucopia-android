@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -10,15 +12,109 @@
     android:background="@color/colorPrimary"
     tools:context="com.example.shashank.myapplication.RegisterActivity">
 
+
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:gravity="center"
-        android:padding="5dp"
-        android:textSize="31sp"
+        android:layout_marginTop="-7dp"
+        android:layout_marginBottom="70dp"
+        android:textSize="40sp"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
-        android:text="Welcome to Cornucopia!"/>
+        android:padding="0dp"
+        android:typeface="normal"
+        android:fontFamily="sans-serif-light"
+
+        android:text="Register"/>
+
+    <com.example.shashank.myapplication.MaterialTextField
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:layout_marginTop="7dp"
+
+        app:mtf_image="@mipmap/account"
+        app:mtf_labelColor="#cccccc">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:textColorHint="@color/colorAccent"
+            />
+
+
+    </com.example.shashank.myapplication.MaterialTextField>
+
+    <com.example.shashank.myapplication.MaterialTextField
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:layout_marginTop="7dp"
+
+        app:mtf_image="@mipmap/email_icon"
+        app:mtf_labelColor="#cccccc">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textColorHint="@color/colorAccent"
+            />
+
+
+
+
+    </com.example.shashank.myapplication.MaterialTextField>
+
+    <com.example.shashank.myapplication.MaterialTextField
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:layout_marginTop="7dp"
+
+        app:mtf_image="@mipmap/key"
+        app:mtf_labelColor="#cccccc">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            />
+
+
+
+
+    </com.example.shashank.myapplication.MaterialTextField>
+
+    <com.example.shashank.myapplication.MaterialTextField
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:layout_marginTop="7dp"
+
+        app:mtf_image="@mipmap/key"
+        app:mtf_labelColor="#cccccc">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm password"
+            />
+
+
+
+
+    </com.example.shashank.myapplication.MaterialTextField>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:id="@+id/registerFab"
+        android:src="@mipmap/arrowright"
+        
+        android:layout_gravity="bottom|right"/>
 
 
 

@@ -108,12 +108,12 @@
     </com.example.shashank.myapplication.MaterialTextField>
 
     <android.support.design.widget.FloatingActionButton
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:id="@+id/registerFab"
         android:src="@mipmap/arrowright"
-        
+
         android:layout_gravity="bottom|right"/>
 
 

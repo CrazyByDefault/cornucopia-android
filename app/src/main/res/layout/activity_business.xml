@@ -44,6 +44,15 @@
 
         />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="SpinWheel"
+        android:id="@+id/spinButton"
+        android:textSize="16sp"
+        />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

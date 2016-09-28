@@ -8,6 +8,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 public class Business extends AppCompatActivity {
@@ -21,6 +23,17 @@ public class Business extends AppCompatActivity {
 
         ImageView img = (ImageView) findViewById(R.id.businessImage);
         img.setImageBitmap(businessPic);
+        final Intent wheel = new Intent(this, SpinWheelActivity.class);
+
+
+        Button spinButton = (Button) findViewById(R.id.spinButton);
+        spinButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(wheel);
+
+            }
+        });
 
     }
 

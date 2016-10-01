@@ -31,7 +31,6 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
-import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.CircleOptions;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
@@ -62,9 +61,14 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
 
 
+
+
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).addApi(LocationServices.API).build();
+
+
+
 
 
 
@@ -86,6 +90,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                     new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
                     1);
         }
+
 
 
 
@@ -147,6 +152,9 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
         client.connect();
+        CharSequence text = "Connecting!";
+        Toast toast = Toast.makeText(this, text, Toast.LENGTH_SHORT);
+        toast.show();
         AppIndex.AppIndexApi.start(client, getIndexApiAction());
     }
 
@@ -162,14 +170,19 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
 
     @Override
-    public void onConnected(@Nullable Bundle bundle) {
+    public void onConnected(Bundle connectionHint) {
 
         //noinspection ResourceType
         Location mLastLocation = LocationServices.FusedLocationApi.getLastLocation(client);
         if (mLastLocation != null) {
             myLat = mLastLocation.getLatitude();
             myLong = mLastLocation.getLongitude();
+            CharSequence text2 = "Latitude is - " + myLat + "Longitude is - " + myLong;
+            Toast toast2 = Toast.makeText(this, text2, Toast.LENGTH_LONG);
+            toast2.show();
         }
+
+
     }
 
     @Override
@@ -179,6 +192,9 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
+        CharSequence text = "Connection failed!";
+        Toast toast = Toast.makeText(this, text, Toast.LENGTH_LONG);
+        toast.show();
 
     }
 }

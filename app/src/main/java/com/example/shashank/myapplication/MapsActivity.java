@@ -49,6 +49,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         circleOptions.center(myLatLng);
         circleOptions.radius(20);
         circleOptions.strokeColor(Color.RED);
+        circleOptions.strokeWidth(2);
         circleOptions.fillColor(0x30C62828);
 
 

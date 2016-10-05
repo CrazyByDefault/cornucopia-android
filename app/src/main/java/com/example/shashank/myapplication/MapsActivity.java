@@ -174,7 +174,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         //noinspection ResourceType
         Location mLastLocation = LocationServices.FusedLocationApi.getLastLocation(client);
-        if (mLastLocation != null) {
+        if (mLastLocation == null) {
             myLat = mLastLocation.getLatitude();
             myLong = mLastLocation.getLongitude();
             CharSequence text2 = "Latitude is - " + myLat + "Longitude is - " + myLong;

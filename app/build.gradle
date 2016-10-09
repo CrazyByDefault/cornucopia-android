@@ -35,4 +35,5 @@ dependencies {
     compile 'com.google.android.gms:play-services-maps:9.4.0'
     compile 'com.nightonke:wowoviewpager:1.0.2'
     compile 'com.google.android.gms:play-services-appindexing:9.4.0'
+    compile 'me.dm7.barcodescanner:zxing:1.9'
 }

@@ -4,4 +4,5 @@
     <string name="section_format">Page: %1$d</string>
     <string name="title_activity_login">Login</string>
     <string name="title_activity_maps">Map</string>
+    <string name="offers">Offers description should go here.</string>
 </resources>

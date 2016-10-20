@@ -26,6 +26,7 @@ dependencies {
     compile 'com.android.support:appcompat-v7:24.2.1'
     compile 'com.android.support:design:24.2.1'
     compile 'com.google.android.gms:play-services-maps:9.4.0'
+    compile 'com.google.android.gms:play-services-location:9.4.0'
     compile 'com.github.florent37:materialtextfield:1.0.5'
     compile 'io.saeid:fab-loading:1.0.0'
     compile 'com.rengwuxian.materialedittext:library:2.1.4'
@@ -33,4 +34,6 @@ dependencies {
     compile 'com.android.support:support-v13:24.2.1'
     compile 'com.google.android.gms:play-services-maps:9.4.0'
     compile 'com.nightonke:wowoviewpager:1.0.2'
+    compile 'com.google.android.gms:play-services-appindexing:9.4.0'
+    compile 'me.dm7.barcodescanner:zxing:1.9'
 }

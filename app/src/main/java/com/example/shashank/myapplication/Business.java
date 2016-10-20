@@ -23,14 +23,14 @@ public class Business extends AppCompatActivity {
 
         ImageView img = (ImageView) findViewById(R.id.businessImage);
         img.setImageBitmap(businessPic);
-        final Intent wheel = new Intent(this, SpinWheelActivity.class);
+        final Intent qr = new Intent(this, ScannerActivity.class);
 
 
         Button spinButton = (Button) findViewById(R.id.spinButton);
         spinButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(wheel);
+                startActivity(qr);
 
             }
         });
